@@ -41,9 +41,9 @@ spec:
               memory: "512Mi"
               cpu: "500m"
           volumeMounts:
-            - name: patiwat-postgres
+            - name: patiwat-postgres-storage
               mountPath: /var/lib/pgsql/data
       volumes:
-        - name: patiwat-postgres
+        - name: patiwat-postgres-storage
           persistentVolumeClaim:
             claimName: patiwat-postgres-storge
