@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: ghcr.io/teehit101/guestbook-backend:latest
+          image: ghcr.io/teehit101/guestbook-backend:94f5ba7b6dcad37fe665f98acbb3b39c59f17821
           ports:
             - containerPort: 8080
           env:
