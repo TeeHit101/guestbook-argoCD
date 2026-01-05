@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: patiwat-backend
-          image: ghcr.io/teehit101/guestbook-backend:latest
+          image: ghcr.io/teehit101/guestbook-backend:8f21067f8d02f9bd5ed98239fd202e04cdb283a7
           ports:
             - containerPort: 8080
           env:
