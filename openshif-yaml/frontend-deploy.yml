@@ -3,19 +3,19 @@ kind: Deployment
 metadata:
   name: patiwat-frontend
   labels:
-    app: frontend
+    app: patiwat-frontend
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: frontend
+      app: patiwat-frontend
   template:
     metadata:
       labels:
-        app: frontend
+        app: patiwat-frontend
     spec:
       containers:
-        - name: frontend
+        - name: patiwat-frontend
           image: ghcr.io/teehit101/guestbook-frontend:latest
           ports:
             - containerPort: 8080

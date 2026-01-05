@@ -3,7 +3,7 @@ kind: Route
 metadata:
   name: patiwat-frontend
   labels:
-    app: frontend
+    app: patiwat-frontend
 spec:
   to:
     kind: Service

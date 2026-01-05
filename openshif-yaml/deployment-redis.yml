@@ -5,14 +5,14 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: redis
+      app: patiwat-redis
   template:
     metadata:
       labels:
-        app: redis
+        app: patiwat-redis
     spec:
       containers:
-        - name: redis
+        - name: patiwat-redis
           image: redis:7-alpine
           command: ["redis-server"]
           args: ["--requirepass", "$(REDIS_PASSWORD)"]
@@ -35,7 +35,7 @@ spec:
                   name: guestbook-secrets
                   key: REDIS_HOST
           volumeMounts:
-            - name: redis-data-storage
+            - name: patiwat-redis-data-storage
               mountPath: /data
           resources:
             requests:
@@ -45,6 +45,6 @@ spec:
               memory: "512Mi"
               cpu: "500m"
       volumes:
-        - name: redis-data-storage
+        - name: patiwat-redis-data-storage
           persistentVolumeClaim:
-            claimName: redis-storage
+            claimName: patiwat-redis-storage

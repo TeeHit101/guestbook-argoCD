@@ -4,7 +4,7 @@ metadata:
   name: patiwat-frontend
 spec:
   selector:
-    app: frontend
+    app: patiwat-frontend
   ports:
     - protocol: TCP
       port: 80

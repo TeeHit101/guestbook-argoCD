@@ -6,14 +6,14 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: postgres
+      app: patiwat-postgres
   template:
     metadata:
       labels:
-        app: postgres
+        app: patiwat-postgres
     spec:
       containers:
-        - name: postgres
+        - name: patiwat-postgres
           image: quay.io/fedora/postgresql-16:latest
           ports:
             - containerPort: 5432
@@ -41,9 +41,9 @@ spec:
               memory: "512Mi"
               cpu: "500m"
           volumeMounts:
-            - name: postgres-storage
+            - name: patiwat-postgres
               mountPath: /var/lib/pgsql/data
       volumes:
-        - name: postgres-storage
+        - name: patiwat-postgres
           persistentVolumeClaim:
-            claimName: postgres-storge
+            claimName: patiwat-postgres-storge
