@@ -18,6 +18,7 @@ spec:
         - name: ghcr-secret
       containers:
         - name: patiwat-frontend
+
           image: ghcr.io/teehit101/guestbook-frontend:18e1bb3621095d85759a1c62c485dd07dc2b1406
           imagePullPolicy: Always
           ports:
@@ -32,6 +33,7 @@ spec:
             limits:
               memory: "256Mi"
               cpu: "250m"
+
           readinessProbe:
             httpGet:
               path: /
