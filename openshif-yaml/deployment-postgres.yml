@@ -21,17 +21,17 @@ spec:
             - name: POSTGRESQL_USER
               valueFrom:
                 secretKeyRef:
-                  name: guestbook-secrets
+                  name: patiwat-guestbook-secrets
                   key: DB_USER
             - name: POSTGRESQL_PASSWORD
               valueFrom:
                 secretKeyRef:
-                  name: guestbook-secrets
+                  name: patiwat-guestbook-secrets
                   key: DB_PASSWORD
             - name: POSTGRESQL_DATABASE
               valueFrom:
                 secretKeyRef:
-                  name: guestbook-secrets
+                  name: patiwat-guestbook-secrets
                   key: DB_NAME
           resources:
             requests:

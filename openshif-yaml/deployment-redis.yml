@@ -22,17 +22,17 @@ spec:
             - name: REDIS_PASSWORD
               valueFrom:
                 secretKeyRef:
-                  name: guestbook-secrets
+                  name: patiwat-guestbook-secrets
                   key: REDIS_PASSWORD
             - name: REDIS_PORT
               valueFrom:
                 secretKeyRef:
-                  name: guestbook-secrets
+                  name: patiwat-guestbook-secrets
                   key: REDIS_PORT
             - name: REDIS_HOST
               valueFrom:
                 secretKeyRef:
-                  name: guestbook-secrets
+                  name: patiwat-guestbook-secrets
                   key: REDIS_HOST
           volumeMounts:
             - name: patiwat-redis-data-storage

@@ -21,7 +21,7 @@ spec:
             - containerPort: 8080
           env:
             - name: API_BASE_URL
-              value: "http://backend:8080"
+              value: "http://patiwat-backend:8080"
           resources:
             requests:
               memory: "128Mi"

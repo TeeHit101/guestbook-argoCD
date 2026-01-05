@@ -20,33 +20,33 @@ spec:
           env:
             # PostgreSQL Environment Variables
             - name: DB_HOST
-              value: "postgres"
+              value: "patiwat-postgres"
             - name: DB_PORT
               value: "5432"
             - name: DB_PASSWORD
               valueFrom:
                 secretKeyRef:
-                  name: guestbook-secrets
+                  name: patiwat-guestbook-secrets
                   key: DB_PASSWORD
             - name: DB_NAME
               valueFrom:
                 secretKeyRef:
-                  name: guestbook-secrets
+                  name: patiwat-guestbook-secrets
                   key: DB_NAME
             - name: DB_USER
               valueFrom:
                 secretKeyRef:
-                  name: guestbook-secrets
+                  name: patiwat-guestbook-secrets
                   key: DB_USER
             # Redis Environment Variables
             - name: REDIS_PORT
               value: "6379"
             - name: REDIS_HOST
-              value: "redis"
+              value: "patiwat-redis"
             - name: REDIS_PASSWORD
               valueFrom:
                 secretKeyRef:
-                  name: guestbook-secrets
+                  name: patiwat-guestbook-secrets
                   key: REDIS_PASSWORD
           resources:
             requests:
