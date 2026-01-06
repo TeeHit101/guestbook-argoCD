@@ -16,7 +16,7 @@ spec:
         - name: ghcr-secret
       containers:
         - name: patiwat-backend
-          image: ghcr.io/teehit101/guestbook-backend:25fca7e94e053f148557d7b5c9946fe89b24f3cc
+          image: ghcr.io/teehit101/guestbook-backend:2c0d3711e9a2791126d274b85b8621bccb6378fb
 
           ports:
             - containerPort: 8080
