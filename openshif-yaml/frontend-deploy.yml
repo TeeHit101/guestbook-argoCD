@@ -19,7 +19,7 @@ spec:
       containers:
         - name: patiwat-frontend
 
-          image: ghcr.io/teehit101/guestbook-frontend:2c0d3711e9a2791126d274b85b8621bccb6378fb
+          image: ghcr.io/teehit101/guestbook-frontend:bf094fd426f1bfbbfb9a0b966bd3f4e02fe1c6f1
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
