@@ -44,4 +44,4 @@ Secrets: Hemligheter (ghcr-secret, patiwat-guestbook-secrets) hanteras manuellt 
 
 ArgoCD: Applikationen styrs av argocd-app.yaml som pekar på mappen openshif-yaml i detta repo.
 
-Detta projekt är en del av kursen Containerteknologi (DevOps24).
+Detta projekt är en del av kursen Containerteknologi och CI/CD Verktyg (DevOps24).
